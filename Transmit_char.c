@@ -1,4 +1,4 @@
-// Write one byte via RS232 ("A" = 01000001 and "A"+parity bit = 010000010)
+// Transmitting one character via RS232 ("A" = 01000001 and "A"+parity bit = 010000010)
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
