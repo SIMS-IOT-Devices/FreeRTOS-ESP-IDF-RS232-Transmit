@@ -35,14 +35,12 @@ void init_RS232()
 
 static void tx_task()
 {
-    char *data = "Hello world";
+    char *data = "Hello world\n";
     
     // 4 - Running UART Communication
     while (1)
     {
-        int len = strlen(data);
-        int txBytes = uart_write_bytes(UART_NUM_0, data, len);
-        printf("%d", txBytes);
+        uart_write_bytes(UART_NUM_0, data, strlen(data));
         vTaskDelay(5000 / portTICK_PERIOD_MS);
     }
 }
