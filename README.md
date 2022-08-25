@@ -1,2 +1,3 @@
-# FreeRTOS-ESP-IDF-RS232-Transmit
-Write one byte via RS232 from ESP32 to the scope
+FreeRTOS ESP IDF RS232 Transmit
+
+Examples of data transmission via RS232 from ESP32 to scope in ESP IDF environment.
